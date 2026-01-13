@@ -15,8 +15,8 @@ from typing import List, Optional, Union, Dict
 import uvicorn
 from datetime import datetime
 
-API_ID = 36939067
-API_HASH = "adcbede40744d8b7ab2ee602c35dc4d9"
+API_ID = 33236116
+API_HASH = "9987a7fee5e9e6e90b2a940091235f09"
 WEBHOOK_URL = os.getenv("WEBHOOK_URL", "")
 
 # Хранилище: имя → клиент
@@ -853,6 +853,7 @@ async def get_chat_history(req: GetChatHistoryReq):
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))
     uvicorn.run("telegram_bot:app", host="0.0.0.0", port=port, reload=False)
+
 
 
 
